@@ -1,0 +1,495 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+100.11      0.02     0.02   271071     0.00     0.00  LESS_THAN(int, int)
+  0.00      0.02     0.00   882631     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned long)
+  0.00      0.02     0.00   334449     0.00     0.00  std::remove_reference<int&>::type&& std::move<int&>(int&)
+  0.00      0.02     0.00   331955     0.00     0.00  GREATER_THAN(int, int)
+  0.00      0.02     0.00   111483     0.00     0.00  SWAP(int&, int&)
+  0.00      0.02     0.00   111483     0.00     0.00  _ZSt4swapIiENSt9enable_ifIXsr6__and_ISt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS3_ESt18is_move_assignableIS3_EEE5valueEvE4typeERS3_SC_
+  0.00      0.02     0.00    30010     0.00     0.00  std::vector<int, std::allocator<int> >::size() const
+  0.00      0.02     0.00       27     0.00     0.00  bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  0.00      0.02     0.00        9     0.00     0.00  bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  0.00      0.02     0.00        5     0.00     0.00  __gnu_cxx::new_allocator<int>::max_size() const
+  0.00      0.02     0.00        4     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const
+  0.00      0.02     0.00        4     0.00     0.00  std::vector<int, std::allocator<int> >::max_size() const
+  0.00      0.02     0.00        4     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  0.00      0.02     0.00        4     0.00     0.00  std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&)
+  0.00      0.02     0.00        4     0.00     0.00  int* std::__niter_base<int*>(int*)
+  0.00      0.02     0.00        2     0.00     0.00  std::move_iterator<int*>::base() const
+  0.00      0.02     0.00        2     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.00      0.02     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+  0.00      0.02     0.00        2     0.00     0.00  std::move_iterator<int*>::move_iterator(int*)
+  0.00      0.02     0.00        2     0.00     0.00  decltype (__miter_base(({parm#1}.base)())) std::__miter_base<int*>(std::move_iterator<int*>)
+  0.00      0.02     0.00        2     0.00     0.00  int* std::__miter_base<int*>(int*)
+  0.00      0.02     0.00        2     0.00     0.00  std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int, std::move_iterator<int*> >(int*)
+  0.00      0.02     0.00        2     0.00     0.00  void std::_Destroy<int*>(int*, int*)
+  0.00      0.02     0.00        2     0.00     0.00  void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  0.00      0.02     0.00        1     0.00    20.02  quick_sort(std::vector<int, std::allocator<int> >&)
+  0.00      0.02     0.00        1     0.00    20.02  quick_sort(std::vector<int, std::allocator<int> >&, int, int)
+  0.00      0.02     0.00        1     0.00     0.00  generate_random_data(std::vector<int, std::allocator<int> >&, int, int, int)
+  0.00      0.02     0.00        1     0.00     0.00  process_command_line(Options&, int, char**)
+  0.00      0.02     0.00        1     0.00     0.00  Options::Options()
+  0.00      0.02     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*)
+  0.00      0.02     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator()
+  0.00      0.02     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::~new_allocator()
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const
+  0.00      0.02     0.00        1     0.00     0.00  std::allocator<int>::allocator()
+  0.00      0.02     0.00        1     0.00     0.00  std::allocator<int>::~allocator()
+  0.00      0.02     0.00        1     0.00     0.00  int* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*)
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl()
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base()
+  0.00      0.02     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  0.00      0.02     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  int* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*)
+  0.00      0.02     0.00        1     0.00     0.00  int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::_M_default_append(unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::resize(unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::vector()
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::~vector()
+  0.00      0.02     0.00        1     0.00     0.00  _ZSt10__fill_n_aIPimiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT1_EE7__valueET_E6__typeES4_T0_RKS3_
+  0.00      0.02     0.00        1     0.00     0.00  int* std::__copy_move_a<true, int*, int*>(int*, int*, int*)
+  0.00      0.02     0.00        1     0.00     0.00  int* std::__copy_move_a2<true, int*, int*>(int*, int*, int*)
+  0.00      0.02     0.00        1     0.00     0.00  int* std::uninitialized_copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*)
+  0.00      0.02     0.00        1     0.00     0.00  int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, int>(std::move_iterator<int*>, std::move_iterator<int*>, int*, std::allocator<int>&)
+  0.00      0.02     0.00        1     0.00     0.00  int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&)
+  0.00      0.02     0.00        1     0.00     0.00  int* std::__uninitialized_move_if_noexcept_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&)
+  0.00      0.02     0.00        1     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.02     0.00        1     0.00     0.00  int* std::copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*)
+  0.00      0.02     0.00        1     0.00     0.00  int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  0.00      0.02     0.00        1     0.00     0.00  __cxx_global_var_init
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 49.94% of 0.02 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.02                 main [1]
+                0.00    0.02       1/1           quick_sort(std::vector<int, std::allocator<int> >&) [3]
+                0.00    0.00       1/1           Options::Options() [36]
+                0.00    0.00       1/1           process_command_line(Options&, int, char**) [35]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector() [56]
+                0.00    0.00       1/1           generate_random_data(std::vector<int, std::allocator<int> >&, int, int, int) [34]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [57]
+-----------------------------------------------
+                0.02    0.00  271071/271071      quick_sort(std::vector<int, std::allocator<int> >&, int, int) [4]
+[2]    100.0    0.02    0.00  271071         LESS_THAN(int, int) [2]
+-----------------------------------------------
+                0.00    0.02       1/1           main [1]
+[3]    100.0    0.00    0.02       1         quick_sort(std::vector<int, std::allocator<int> >&) [3]
+                0.00    0.02       1/1           quick_sort(std::vector<int, std::allocator<int> >&, int, int) [4]
+                0.00    0.00       2/30010       std::vector<int, std::allocator<int> >::size() const [16]
+-----------------------------------------------
+                               26638             quick_sort(std::vector<int, std::allocator<int> >&, int, int) [4]
+                0.00    0.02       1/1           quick_sort(std::vector<int, std::allocator<int> >&) [3]
+[4]    100.0    0.00    0.02       1+26638   quick_sort(std::vector<int, std::allocator<int> >&, int, int) [4]
+                0.02    0.00  271071/271071      LESS_THAN(int, int) [2]
+                0.00    0.00  852631/882631      std::vector<int, std::allocator<int> >::operator[](unsigned long) [11]
+                0.00    0.00  331955/331955      GREATER_THAN(int, int) [13]
+                0.00    0.00  111483/111483      SWAP(int&, int&) [14]
+                               26638             quick_sort(std::vector<int, std::allocator<int> >&, int, int) [4]
+-----------------------------------------------
+                0.00    0.00   30000/882631      generate_random_data(std::vector<int, std::allocator<int> >&, int, int, int) [34]
+                0.00    0.00  852631/882631      quick_sort(std::vector<int, std::allocator<int> >&, int, int) [4]
+[11]     0.0    0.00    0.00  882631         std::vector<int, std::allocator<int> >::operator[](unsigned long) [11]
+-----------------------------------------------
+                0.00    0.00  334449/334449      _ZSt4swapIiENSt9enable_ifIXsr6__and_ISt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS3_ESt18is_move_assignableIS3_EEE5valueEvE4typeERS3_SC_ [15]
+[12]     0.0    0.00    0.00  334449         std::remove_reference<int&>::type&& std::move<int&>(int&) [12]
+-----------------------------------------------
+                0.00    0.00  331955/331955      quick_sort(std::vector<int, std::allocator<int> >&, int, int) [4]
+[13]     0.0    0.00    0.00  331955         GREATER_THAN(int, int) [13]
+-----------------------------------------------
+                0.00    0.00  111483/111483      quick_sort(std::vector<int, std::allocator<int> >&, int, int) [4]
+[14]     0.0    0.00    0.00  111483         SWAP(int&, int&) [14]
+                0.00    0.00  111483/111483      _ZSt4swapIiENSt9enable_ifIXsr6__and_ISt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS3_ESt18is_move_assignableIS3_EEE5valueEvE4typeERS3_SC_ [15]
+-----------------------------------------------
+                0.00    0.00  111483/111483      SWAP(int&, int&) [14]
+[15]     0.0    0.00    0.00  111483         _ZSt4swapIiENSt9enable_ifIXsr6__and_ISt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS3_ESt18is_move_assignableIS3_EEE5valueEvE4typeERS3_SC_ [15]
+                0.00    0.00  334449/334449      std::remove_reference<int&>::type&& std::move<int&>(int&) [12]
+-----------------------------------------------
+                0.00    0.00       1/30010       std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+                0.00    0.00       2/30010       std::vector<int, std::allocator<int> >::resize(unsigned long) [55]
+                0.00    0.00       2/30010       quick_sort(std::vector<int, std::allocator<int> >&) [3]
+                0.00    0.00       4/30010       std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [41]
+                0.00    0.00   30001/30010       generate_random_data(std::vector<int, std::allocator<int> >&, int, int, int) [34]
+[16]     0.0    0.00    0.00   30010         std::vector<int, std::allocator<int> >::size() const [16]
+-----------------------------------------------
+                0.00    0.00       9/27          bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [18]
+                0.00    0.00      18/27          process_command_line(Options&, int, char**) [35]
+[17]     0.0    0.00    0.00      27         bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [17]
+-----------------------------------------------
+                0.00    0.00       9/9           process_command_line(Options&, int, char**) [35]
+[18]     0.0    0.00    0.00       9         bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [18]
+                0.00    0.00       9/27          bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [17]
+-----------------------------------------------
+                0.00    0.00       1/5           __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [38]
+                0.00    0.00       4/5           std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [23]
+[19]     0.0    0.00    0.00       5         __gnu_cxx::new_allocator<int>::max_size() const [19]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<int, std::allocator<int> >::max_size() const [21]
+[20]     0.0    0.00    0.00       4         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [20]
+-----------------------------------------------
+                0.00    0.00       2/4           std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+                0.00    0.00       2/4           std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [41]
+[21]     0.0    0.00    0.00       4         std::vector<int, std::allocator<int> >::max_size() const [21]
+                0.00    0.00       4/4           std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [23]
+                0.00    0.00       4/4           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [20]
+-----------------------------------------------
+                0.00    0.00       1/4           std::vector<int, std::allocator<int> >::~vector() [57]
+                0.00    0.00       3/4           std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+[22]     0.0    0.00    0.00       4         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [22]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<int, std::allocator<int> >::max_size() const [21]
+[23]     0.0    0.00    0.00       4         std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [23]
+                0.00    0.00       4/5           __gnu_cxx::new_allocator<int>::max_size() const [19]
+-----------------------------------------------
+                0.00    0.00       1/4           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [68]
+                0.00    0.00       3/4           int* std::__copy_move_a2<true, int*, int*>(int*, int*, int*) [60]
+[24]     0.0    0.00    0.00       4         int* std::__niter_base<int*>(int*) [24]
+-----------------------------------------------
+                0.00    0.00       2/2           decltype (__miter_base(({parm#1}.base)())) std::__miter_base<int*>(std::move_iterator<int*>) [29]
+[25]     0.0    0.00    0.00       2         std::move_iterator<int*>::base() const [25]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<int*>(int*, int*) [32]
+[26]     0.0    0.00    0.00       2         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [26]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [49]
+                0.00    0.00       1/2           std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+[27]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [27]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [50]
+-----------------------------------------------
+                0.00    0.00       2/2           std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int, std::move_iterator<int*> >(int*) [31]
+[28]     0.0    0.00    0.00       2         std::move_iterator<int*>::move_iterator(int*) [28]
+-----------------------------------------------
+                0.00    0.00       2/2           int* std::copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [67]
+[29]     0.0    0.00    0.00       2         decltype (__miter_base(({parm#1}.base)())) std::__miter_base<int*>(std::move_iterator<int*>) [29]
+                0.00    0.00       2/2           int* std::__miter_base<int*>(int*) [30]
+                0.00    0.00       2/2           std::move_iterator<int*>::base() const [25]
+-----------------------------------------------
+                0.00    0.00       2/2           decltype (__miter_base(({parm#1}.base)())) std::__miter_base<int*>(std::move_iterator<int*>) [29]
+[30]     0.0    0.00    0.00       2         int* std::__miter_base<int*>(int*) [30]
+-----------------------------------------------
+                0.00    0.00       2/2           int* std::__uninitialized_move_if_noexcept_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [65]
+[31]     0.0    0.00    0.00       2         std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int, std::move_iterator<int*> >(int*) [31]
+                0.00    0.00       2/2           std::move_iterator<int*>::move_iterator(int*) [28]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [33]
+[32]     0.0    0.00    0.00       2         void std::_Destroy<int*>(int*, int*) [32]
+                0.00    0.00       2/2           void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [26]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<int, std::allocator<int> >::~vector() [57]
+                0.00    0.00       1/2           std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+[33]     0.0    0.00    0.00       2         void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [33]
+                0.00    0.00       2/2           void std::_Destroy<int*>(int*, int*) [32]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[34]     0.0    0.00    0.00       1         generate_random_data(std::vector<int, std::allocator<int> >&, int, int, int) [34]
+                0.00    0.00   30001/30010       std::vector<int, std::allocator<int> >::size() const [16]
+                0.00    0.00   30000/882631      std::vector<int, std::allocator<int> >::operator[](unsigned long) [11]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::resize(unsigned long) [55]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[35]     0.0    0.00    0.00       1         process_command_line(Options&, int, char**) [35]
+                0.00    0.00      18/27          bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [17]
+                0.00    0.00       9/9           bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [18]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[36]     0.0    0.00    0.00       1         Options::Options() [36]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [50]
+[37]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [51]
+[38]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [38]
+                0.00    0.00       1/5           __gnu_cxx::new_allocator<int>::max_size() const [19]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<int>::allocator() [42]
+[39]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::new_allocator() [39]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<int>::~allocator() [43]
+[40]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::~new_allocator() [40]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+[41]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [41]
+                0.00    0.00       4/30010       std::vector<int, std::allocator<int> >::size() const [16]
+                0.00    0.00       2/4           std::vector<int, std::allocator<int> >::max_size() const [21]
+                0.00    0.00       1/1           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [66]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [46]
+[42]     0.0    0.00    0.00       1         std::allocator<int>::allocator() [42]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::new_allocator() [39]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [47]
+[43]     0.0    0.00    0.00       1         std::allocator<int>::~allocator() [43]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::~new_allocator() [40]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__copy_move_a<true, int*, int*>(int*, int*, int*) [59]
+[44]     0.0    0.00    0.00       1         int* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+[45]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [45]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [48]
+[46]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [46]
+                0.00    0.00       1/1           std::allocator<int>::allocator() [42]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [49]
+[47]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [47]
+                0.00    0.00       1/1           std::allocator<int>::~allocator() [43]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector() [56]
+[48]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_base() [48]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [46]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [57]
+[49]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [49]
+                0.00    0.00       1/2           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [27]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [47]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [27]
+[50]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [50]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [37]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [45]
+[51]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [51]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [38]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::uninitialized_copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [61]
+[52]     0.0    0.00    0.00       1         int* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [52]
+                0.00    0.00       1/1           int* std::copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [67]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [63]
+[53]     0.0    0.00    0.00       1         int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [53]
+                0.00    0.00       1/1           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [68]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::resize(unsigned long) [55]
+[54]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+                0.00    0.00       3/4           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [22]
+                0.00    0.00       2/4           std::vector<int, std::allocator<int> >::max_size() const [21]
+                0.00    0.00       1/30010       std::vector<int, std::allocator<int> >::size() const [16]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [41]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [45]
+                0.00    0.00       1/1           int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&) [64]
+                0.00    0.00       1/1           int* std::__uninitialized_move_if_noexcept_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [65]
+                0.00    0.00       1/2           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [33]
+                0.00    0.00       1/2           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [27]
+-----------------------------------------------
+                0.00    0.00       1/1           generate_random_data(std::vector<int, std::allocator<int> >&, int, int, int) [34]
+[55]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::resize(unsigned long) [55]
+                0.00    0.00       2/30010       std::vector<int, std::allocator<int> >::size() const [16]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[56]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::vector() [56]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base() [48]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[57]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::~vector() [57]
+                0.00    0.00       1/4           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [22]
+                0.00    0.00       1/2           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [33]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [49]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [68]
+[58]     0.0    0.00    0.00       1         _ZSt10__fill_n_aIPimiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT1_EE7__valueET_E6__typeES4_T0_RKS3_ [58]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__copy_move_a2<true, int*, int*>(int*, int*, int*) [60]
+[59]     0.0    0.00    0.00       1         int* std::__copy_move_a<true, int*, int*>(int*, int*, int*) [59]
+                0.00    0.00       1/1           int* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [67]
+[60]     0.0    0.00    0.00       1         int* std::__copy_move_a2<true, int*, int*>(int*, int*, int*) [60]
+                0.00    0.00       3/4           int* std::__niter_base<int*>(int*) [24]
+                0.00    0.00       1/1           int* std::__copy_move_a<true, int*, int*>(int*, int*, int*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, int>(std::move_iterator<int*>, std::move_iterator<int*>, int*, std::allocator<int>&) [62]
+[61]     0.0    0.00    0.00       1         int* std::uninitialized_copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [61]
+                0.00    0.00       1/1           int* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [52]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__uninitialized_move_if_noexcept_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [65]
+[62]     0.0    0.00    0.00       1         int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, int>(std::move_iterator<int*>, std::move_iterator<int*>, int*, std::allocator<int>&) [62]
+                0.00    0.00       1/1           int* std::uninitialized_copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [61]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&) [64]
+[63]     0.0    0.00    0.00       1         int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [63]
+                0.00    0.00       1/1           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [53]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+[64]     0.0    0.00    0.00       1         int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&) [64]
+                0.00    0.00       1/1           int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [63]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [54]
+[65]     0.0    0.00    0.00       1         int* std::__uninitialized_move_if_noexcept_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&) [65]
+                0.00    0.00       2/2           std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int, std::move_iterator<int*> >(int*) [31]
+                0.00    0.00       1/1           int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, int>(std::move_iterator<int*>, std::move_iterator<int*>, int*, std::allocator<int>&) [62]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [41]
+[66]     0.0    0.00    0.00       1         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [66]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [52]
+[67]     0.0    0.00    0.00       1         int* std::copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [67]
+                0.00    0.00       2/2           decltype (__miter_base(({parm#1}.base)())) std::__miter_base<int*>(std::move_iterator<int*>) [29]
+                0.00    0.00       1/1           int* std::__copy_move_a2<true, int*, int*>(int*, int*, int*) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [53]
+[68]     0.0    0.00    0.00       1         int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [68]
+                0.00    0.00       1/4           int* std::__niter_base<int*>(int*) [24]
+                0.00    0.00       1/1           _ZSt10__fill_n_aIPimiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT1_EE7__valueET_E6__typeES4_T0_RKS3_ [58]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [86]
+[69]     0.0    0.00    0.00       1         __cxx_global_var_init [69]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [3] quick_sort(std::vector<int, std::allocator<int> >&) [26] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [30] int* std::__miter_base<int*>(int*)
+   [4] quick_sort(std::vector<int, std::allocator<int> >&, int, int) [45] std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [24] int* std::__niter_base<int*>(int*)
+  [13] GREATER_THAN(int, int) [46] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl() [59] int* std::__copy_move_a<true, int*, int*>(int*, int*, int*)
+  [34] generate_random_data(std::vector<int, std::allocator<int> >&, int, int, int) [47] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [60] int* std::__copy_move_a2<true, int*, int*>(int*, int*, int*)
+  [35] process_command_line(Options&, int, char**) [27] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [61] int* std::uninitialized_copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*)
+  [14] SWAP(int&, int&)       [22] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [62] int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, int>(std::move_iterator<int*>, std::move_iterator<int*>, int*, std::allocator<int>&)
+   [2] LESS_THAN(int, int)    [48] std::_Vector_base<int, std::allocator<int> >::_Vector_base() [63] int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long)
+  [36] Options::Options()     [49] std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [64] int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&)
+  [37] __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [28] std::move_iterator<int*>::move_iterator(int*) [31] std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int, std::move_iterator<int*> >(int*)
+  [38] __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [50] std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [65] int* std::__uninitialized_move_if_noexcept_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&)
+  [39] __gnu_cxx::new_allocator<int>::new_allocator() [51] std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [66] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [40] __gnu_cxx::new_allocator<int>::~new_allocator() [23] std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [67] int* std::copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*)
+  [19] __gnu_cxx::new_allocator<int>::max_size() const [52] int* std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<int*>, int*>(std::move_iterator<int*>, std::move_iterator<int*>, int*) [12] std::remove_reference<int&>::type&& std::move<int&>(int&)
+  [20] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const [53] int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [15] _ZSt4swapIiENSt9enable_ifIXsr6__and_ISt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS3_ESt18is_move_assignableIS3_EEE5valueEvE4typeERS3_SC_
+  [25] std::move_iterator<int*>::base() const [54] std::vector<int, std::allocator<int> >::_M_default_append(unsigned long) [68] int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  [41] std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const [55] std::vector<int, std::allocator<int> >::resize(unsigned long) [32] void std::_Destroy<int*>(int*, int*)
+  [16] std::vector<int, std::allocator<int> >::size() const [56] std::vector<int, std::allocator<int> >::vector() [33] void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  [21] std::vector<int, std::allocator<int> >::max_size() const [57] std::vector<int, std::allocator<int> >::~vector() [17] bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  [42] std::allocator<int>::allocator() [11] std::vector<int, std::allocator<int> >::operator[](unsigned long) [18] bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  [43] std::allocator<int>::~allocator() [58] _ZSt10__fill_n_aIPimiEN9__gnu_cxx11__enable_ifIXsr11__is_scalarIT1_EE7__valueET_E6__typeES4_T0_RKS3_ [69] __cxx_global_var_init
+  [44] int* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*) [29] decltype (__miter_base(({parm#1}.base)())) std::__miter_base<int*>(std::move_iterator<int*>)

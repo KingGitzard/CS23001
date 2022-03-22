@@ -1,0 +1,4 @@
+The bubble sort function takes the longest because it is bottle necked by the number of times the vector is accessed.
+Bubble sort takes about 31% of the runtime, which is followed by the call:
+std::vector, std::allocator<int> >::operator[] which only takes about 27% of the runtime. The large number of calls
+to access the vector cause the bottlenck slowing it down
